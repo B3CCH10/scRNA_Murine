@@ -1,4 +1,7 @@
-# scRNA_Murine
+<p align="center">
+  <img src="https://github.com/B3CCH10/scRNA_Murine/blob/main/Summer%20plans.png?raw=true", alt="Header Image">
+</p>
+
 scRNA: Lung Cell DE, CD45+ &amp; CD45-, Influenza A and Control
 <br>[Single-Cell RNA-Sequencing Analysis of Influenza Infection in Murine Immune Cells]
 
