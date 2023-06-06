@@ -1,6 +1,6 @@
 # scRNA_Murine
 scRNA: Lung Cell DE, CD45+ &amp; CD45-, Influenza A and Control
-Single-Cell RNA-Sequencing Analysis of Influenza Infection in Murine Immune Cells
+<br>[Single-Cell RNA-Sequencing Analysis of Influenza Infection in Murine Immune Cells]
 
 ## Introduction
 Influenza virus, despite its significant impact on global health, has complex and yet not fully understood interactions with the host immune system. One of the major challenges in studying influenza virus is dissecting the diversity of cellular responses to viral infection. Recent advancements in single-cell RNA-sequencing (scRNA-seq) provide a powerful tool for exploring the cellular heterogeneity and understanding the host response to influenza infection. The original study by <i>Steuerman et al. (2018)</i> utilized massively parallel single-cell RNA-sequencing (MARS-seq) to map the host lung response to in-vivo influenza infection in wild-type and Irf7-knockout mice across nine immune and non-immune cell types. 
@@ -17,13 +17,10 @@ To further analyze the raw count data from immune cell samples, we employed an a
 We then applied the Leiden algorithm for community detection on our SNN
   graph. This allowed us to partition cells into clusters based on their gene expression profiles. To further our intention of identifying the major cell types of each cluster, we initiated a process to identify the top 20 genes from each identified cluster. To accomplish this, we employed differential gene expression analysis with scanpy’s ‘rank_gene_groups’ method, which helps to identify genes based on their expression across the identified leiden clusters.
 
-  Results and Discussion
-The analysis revealed distinct cell clusters, each potentially representing a unique cellular response to influenza infection. The identities of these clusters, however, are yet to be determined.
-The next steps will involve conducting differential gene expression analysis within and between these clusters to identify key genes and pathways involved 
+## Results and Discussion
+The analysis revealed distinct cell clusters, each potentially representing a unique cellular response to influenza infection. The identities of these clusters, however, are yet to be determined. The next steps will involve conducting differential gene expression analysis within and between these clusters to identify key genes and pathways involved immune response to influenza infection. This can lead to the identification of specific cell types involved in the immune response and possibly the discovery of novel biomarkers. The differences in gene expression profiles between infected and uninfected cells can also shed light on the molecular mechanisms involved in the immune response to influenza infection and could potentially identify targets for therapeutic intervention.
 
-immune response to influenza infection. This can lead to the identification of specific cell types involved in the immune response and possibly the discovery of novel biomarkers.
-The differences in gene expression profiles between infected and uninfected cells can also shed light on the molecular mechanisms involved in the immune response to influenza infection and could potentially identify targets for therapeutic intervention.
-Conclusion
+## Conclusion
 Our preliminary analysis using single-cell RNA sequencing data has revealed a complex and diverse immune response to influenza infection. Further investigation of the identified cell clusters and their gene expression profiles promises to enhance our understanding of the host-virus interaction dynamics and might open new avenues for influenza therapy targeting specific cell types.
 
  
