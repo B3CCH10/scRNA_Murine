@@ -17,7 +17,8 @@ To further analyze the raw count data from immune cell samples, we employed an a
 
 - <b>Next, we filtered</b> out cells and genes that fell below a certain threshold, thereby ensuring a clean dataset for downstream analyses. We also performed normalization and log transformation of the data to account for differences in sequencing depth across cells.
 
-- Following data normalization, we used principal component analysis (PCA) for <b>dimensionality reduction</b>. The variance explained by each principal component was then plotted. We constructed a shared nearest neighbor <b>(SNN)</b> graph based on the top 9 principal components. We then applied the <b>UMAP </b>algorithm to visualize the data in two dimensions .
+- Following data normalization, we used principal component analysis (PCA) for <b>dimensionality reduction</b>. The variance explained by each principal component was then plotted. 
+- We constructed a shared nearest neighbor <b>(SNN)</b> graph based on the top 9 principal components. We then applied the <b>UMAP </b>algorithm to visualize the data in two dimensions .
 We then applied the Leiden algorithm for community detection on our SNN
   graph. This allowed us to partition cells into clusters based on their gene expression profiles. To further our intention of identifying the major cell types of each cluster, we initiated a process to identify the top 20 genes from each identified cluster. To accomplish this, we employed differential gene expression analysis with scanpy’s ‘rank_gene_groups’ method, which helps to identify genes based on their expression across the identified leiden clusters.
 
