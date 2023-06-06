@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/B3CCH10/scRNA_Murine/blob/main/Summer%20plans.png?raw=true" alt="scRNA Murine Lungs" style="width: 120%; height: 100%;">
+  <img src="https://github.com/B3CCH10/scRNA_Murine/blob/main/sized_dna.png?raw=true">
 </p>
 
 
