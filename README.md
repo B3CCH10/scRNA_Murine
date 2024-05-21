@@ -23,10 +23,18 @@ To further analyze the raw count data from immune cell samples, we employed an a
 <b> Leiden </b> algorithm for community detection on our SNN graph. <br>
 <br>This allowed us to partition cells into clusters based on their gene expression profiles. To further our intention of identifying the major cell types of each cluster, we initiated a process to identify the <b>top 20 genes</b> from each identified cluster. To accomplish this, we employed differential gene expression analysis with scanpy’s ‘rank_gene_groups’ method, which helps to identify genes based on their expression across the identified leiden clusters.
 
-## Results and Discussion
-The analysis revealed distinct cell clusters, each potentially representing a unique cellular response to influenza infection. The identities of these clusters, however, are yet to be determined. The next steps will involve conducting differential gene expression analysis within and between these clusters to identify key genes and pathways involved immune response to influenza infection. This can lead to the identification of specific cell types involved in the immune response and possibly the discovery of novel biomarkers. The differences in gene expression profiles between infected and uninfected cells can also shed light on the molecular mechanisms involved in the immune response to influenza infection and could potentially identify targets for therapeutic intervention.
+## Results 
+    Analyzed single-cell RNA sequencing (scRNA-seq) data from murine lung tissue to study the immune response to Influenza A infection, focusing on CD45+ leukocytes and CD45- epithelial cells. Lung tissue was chosen for its critical role in respiratory responses. scRNA-seq captured the heterogeneity of cell populations, revealing significant upregulation of immune cell types, including <b> T cells, B cells, macrophages, and dendritic cells, </b> in infected samples compared to controls. Further analysis identified specific gene expression changes within these subsets, particularly genes involved in antiviral defense (e.g.,<b> Ifit1, Oas1, Mx1</b>) and inflammation (e.g.,<b> Il6, Tnf, Ccl2 </b>), highlighting the specific roles these genes play in the immune response. This detailed examination provided a comprehensive view of the immune landscape during influenza infection, enhancing understanding of host-pathogen interactions at a single-cell level.
+    
+## Discussion
+Our preliminary analysis using single-cell RNA sequencing data has revealed a complex and diverse immune response to influenza infection. Further investigation of the identified cell clusters and their gene expression profiles promises to enhance our understanding of the host-virus interaction dynamics and might open new avenues for influenza therapy targeting specific cell, and gene types:
 
-## Conclusion
-Our preliminary analysis using single-cell RNA sequencing data has revealed a complex and diverse immune response to influenza infection. Further investigation of the identified cell clusters and their gene expression profiles promises to enhance our understanding of the host-virus interaction dynamics and might open new avenues for influenza therapy targeting specific cell types.
+ <i><b> Genes and Their Functions:</i></b>
 
+- **Ifit1 (Interferon-Induced Protein with Tetratricopeptide Repeats 1)**: Produces a protein that helps inhibit viral replication by binding viral RNA.
+- **Oas1 (2'-5'-Oligoadenylate Synthetase 1)**: Produces an enzyme that activates RNase L, leading to degradation of viral RNA.
+- **Mx1 (Myxovirus Resistance 1)**: Produces a GTPase that inhibits the replication of influenza viruses and other RNA viruses.
+- **Il6 (Interleukin 6)**: Produces a cytokine involved in inflammation and immune response, promoting the activation of immune cells.
+- **Tnf (Tumor Necrosis Factor)**: Produces a cytokine that plays a key role in inflammation and apoptosis, helping to control infection.
+- **Ccl2 (Chemokine (C-C motif) Ligand 2)**: Produces a chemokine that recruits monocytes, memory T cells, and dendritic cells to sites of infection and inflammation.
  
